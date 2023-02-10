@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +8,37 @@
     <title>signup form</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <form action="http://httpbin.org/post" method="post"></form>
-    
+    <div class="intro-text">
+        <p>This is not a real online servivce! This is just a practice form for when I would need to make sign - up forms in
+            real projects. I have decided to use the Mobile First Responsive Web Design Approach for this project.</p>
+        <p>Sign up now - </p>
+    </div>
+
+    <div class="form">
+        <form action="http://httpbin.org/post" method="post">
+            <div class="side-image"></div>
+            <label for="first-name">FIRST NAME</label>
+            <input type="text" name="first-name" id="first-name">
+            <label for="last-name">LAST NAME</label>
+            <input type="text" name="last-name" id="last-name">
+            <label for="email">EMAIL</label>
+            <input type="email" name="email" id="email">
+            <label for="phone-number">PHONE NUMBER</label>
+            <input type="tel" name="phone-number" id="phone-number">
+            <label for="password">PASSWORD</label>
+            <input type="password" name="password" id="password">
+            <label for="confirm-password">CONFIRM PASSWORD</label>
+            <input type="password" name="confirm-password" id="confirm-password">
+        </form>  
+    </div>
+    <div class="create-account"><button type="submit">CREATE ACCOUNT</button></div>
+
+    <div class="log-in">
+        <p>Already have a account? <a href="/sign-up-form/sign_up_form.html">Log in</a>.</p>
+    </div>
+
 </body>
+
 </html>
