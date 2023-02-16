@@ -1,0 +1,82 @@
+@media screen and (min-width: 1024px) {
+
+    html body {
+        /* animation: pulse 5s  infinite; */
+        background-image: linear-gradient(to bottom, rgb(138, 159, 254), rgb(245, 110, 245));
+        /* background-image: url(./../media/pawel-czerwinski-6lQDFGOB1iw-unsplash.jpg); */
+        /* background-size: 11px; */
+        overflow: hidden;
+    }
+
+    .container {
+        display: flex;
+        max-height: fit-content;
+    }
+
+    .left-content {
+        max-width: fit-content;
+    }
+
+    .left-content .side-image img {
+        position: relative;
+        height: calc(100vh + 10px);
+        width: auto;
+    }
+
+    .left-content .side-image .logo {
+        /* display: inline-block; */
+        margin-top: 170px;
+    }
+
+    .left-content>.side-image>.credits {
+        position: relative;
+        z-index: 1;
+    }
+
+
+    /* RIGHT ------------------------------------------ */
+    .right-content {
+        margin: 80px 30px 30px 30px;
+        height: fit-content;
+        /* box-shadow: none; */
+        padding-right: 30px;
+        padding-left: 30px;
+        margin-right: 0;
+        margin-left: 0;
+        box-shadow: 0px 0px 20px -2px rgba(0, 0, 0, 0.687);
+    }
+
+    .right-content form {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .right-content>.intro-text>p {
+        font-size: large;
+        margin-bottom: 30px;
+    }
+    .right-content>.intro-text>.sign-up-text{
+        height: 50px;
+        line-height: 40px;
+        vertical-align: middle;
+    }
+    form,
+    .create-account,
+    .log-in,
+    .intro-text {
+        margin-left: 10px;
+    }
+
+    form>.grid-item>input {
+        width: 250px;
+    }
+
+    /* @keyframes pulse {
+        0%,
+        100% {
+            background-image: linear-gradient(to bottom , rgb(250, 121, 254), rgb(148, 140, 245));
+        }
+        50% {  
+            background-color: rgb(250, 121, 254);
+        }
+    } */
+}

@@ -5,11 +5,11 @@
     outline: solid #f00 1px !important;
 } */
 
-
-@font-face { 
-    font-family: 'Quicksand';
-    src: url('./fonts/Quicksand-VariableFont_wght.ttf') format('truetype');
-    }
+/* 
+.left-content ->
+.side-image -> .logo -> svg, .company-name| img,
+.credits -> a
+*/
 
 html,
 body {
@@ -23,7 +23,7 @@ body {
 
 .container {
     width: 100%;
-    height: fit-content;
+    height: auto;
 }
 
 .left-content {
@@ -31,12 +31,11 @@ body {
     position: relative;
     width: 100%;
     height: auto;
-    /* overflow-y: visible; */
     z-index: -1;
 }
 
 .side-image>img {
-    position: absolute;
+    position: fixed;
     max-width: 100vh;
     max-height: auto;
 }
@@ -66,10 +65,10 @@ body {
     font-family: 'Russo One', sans-serif;
     font-size: 70px;
     padding-left: 10px;
-
+    width: max-content;
     text-shadow: 10px 10px;
     /* FONT GRADIENT */
-    background: linear-gradient(to bottom, rgb(255, 255, 255),white);
+    background: linear-gradient(to bottom, rgb(255, 255, 255), white);
     background-clip: content-box;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
