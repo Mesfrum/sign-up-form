@@ -75,11 +75,11 @@ body {
 
 .logo .company-name {
     font-family: 'Russo One', sans-serif;
-    font-size: 80px;
+    font-size: 5rem;
     padding-left: 10px;
     width: max-content;
-    text-shadow: 10px 10px;
-    background-color: #ffffff;
+    text-shadow: 2px 2px white;
+    background-color: #000000;
 
     /* FONT GRADIENT */
     /* background: linear-gradient(to bottom, rgb(218, 221, 252), white); */
