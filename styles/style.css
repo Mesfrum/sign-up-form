@@ -12,10 +12,6 @@
 } */
 
 * {
-    --caput-mortuum: #571C18ff;
-    --chestnut: #AB4539ff;
-    --cerulean: #46788Dff;
-    --gunmetal: #0E2A36ff;
     --rich-black: #081B22ff;
 }
 
@@ -23,15 +19,17 @@ html,
 body {
     width: 100%;
     height: 100%;
-    color: #000;
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 .container {
     width: 100%;
-    height: auto;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 .left-content {
@@ -59,33 +57,25 @@ body {
     display: flex;
     position: absolute;
     width: 100%;
-    height: fit-content;
+    height: auto;
     margin-top: 70px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 0px 10px 0px;
     background-color: #00000031;
-    /* background-image: linear-gradient(to right, rgba(255, 145, 253, 0.402), rgba(30, 4, 117, 0.4), rgba(251, 0, 213, 0.349)); */
     z-index: 2;
     justify-content: center;
 }
+
 .logo>img {
-    width: 80px;
+    width: 75px;
     height: auto;
 }
 
 .logo .company-name {
     font-family: 'Russo One', sans-serif;
-    font-size: 5rem;
-    padding-left: 10px;
-    width: max-content;
-    text-shadow: 2px 2px white;
-    background-color: #000000;
-
-    /* FONT GRADIENT */
-    /* background: linear-gradient(to bottom, rgb(218, 221, 252), white); */
-    background-clip: content-box;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+    font-size: 4.78rem;
+    padding-left: 7px;
+    text-shadow: -2px -2px black;
+    color: white;
 }
 
 .shadow {
